@@ -1519,7 +1519,144 @@
                 opacity: 0.8;
             }
         }
-    </style>
+
+        /* Enquiry Section */
+/* Enquiry Section */
+.enquiry-section {
+    background: var(--dark-secondary);
+    padding: 8rem 0;
+    position: relative;
+}
+
+.enquiry-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.enquiry-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+}
+
+.enquiry-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+    background: var(--card-hover);
+}
+
+.enquiry-icon {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.enquiry-card h3 {
+    color: var(--text);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.enquiry-card p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.enquiry-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white !important;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    border: none;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+}
+
+.enquiry-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(67, 97, 238, 0.5);
+    color: white !important;
+}
+/* For Option 1 */
+.card-subtitle {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* For Option 2 */
+.benefits-list {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.benefit-item i {
+    color: var(--accent);
+    font-size: 0.9rem;
+}
+
+/* For Option 3 */
+.process-steps {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background: rgba(67, 97, 238, 0.1);
+    padding: 0.8rem;
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+}
+.enquiry-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 1.5rem 2rem 2.5rem 2rem; /* Even less top padding */
+    border: var(--border);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.enquiry-icon {
+    font-size: 2.5rem; /* Slightly smaller icon */
+    color: var(--primary);
+    margin-bottom: 0.8rem; /* Reduced spacing */
+}
+
+.enquiry-card h3 {
+    color: var(--text);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-top: 0;
+    padding-top: 0;
+}
+/* Make sure Font Awesome icons are loaded */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+ </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -1557,6 +1694,7 @@
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#team">Our Team</a>
+                <a href="#enquiry">Enquiry</a> 
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -1931,6 +2069,30 @@
             </div>
         </div>
     </section>
+  <!-- Client Enquiry Section -->
+<section id="enquiry" class="enquiry-section">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind? Let's discuss how we can bring your vision to life.</p>
+        
+        <div class="enquiry-content">
+            <div class="enquiry-card">
+                <div class="enquiry-icon">
+                    <i class="fas fa-form"></i>
+                </div>
+                <h3>Project Enquiry Form</h3>
+                <p class="process-steps">1. Fill Form → 2. We Review → 3. Get Quote → 4. Start Project</p>
+                <p>Tell us about your project and we'll get back to you within 24 hours</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfrvj-lQTHzTFNd0G2vt9u7k-IXr_gTYl7fkjH4tXD146hKmA/viewform" 
+                   class="enquiry-btn" 
+                   target="_blank">
+                   <i class="fas fa-external-link-alt"></i>
+                   Open Enquiry Form
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
     
     <!-- Contact Section -->
     <section id="contact" class="contact">
