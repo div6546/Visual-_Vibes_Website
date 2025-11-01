@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brijesh Nanavati | Premier Real Estate Consultant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/Gemini_Generated_Image_7j4i7r7j4i7r7j4i__1_-removebg-preview.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #2c5aa0;
+            --secondary: #f8f9fa;
+            --accent: #ff6b35;
+            --text: #333333;
+            --light-text: #666666;
+            --border: #e0e0e0;
+            --white: #ffffff;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            background-color: var(--secondary);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            font-size: 28px;
+            color: var(--primary);
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Navbar Base Styles */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        /* Navbar Brand */
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .navbar-brand i {
+            font-size: 28px;
+            color: var(--primary);
+        }
+
+        .navbar-brand h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        /* Navbar Toggler */
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+        }
+
+        .navbar-toggler-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            position: relative;
+        }
+
+        .navbar-toggler-icon span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: var(--primary);
+            border-radius: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Navbar Toggler Animation */
+        .navbar-toggler.active .navbar-toggler-icon span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .navbar-toggler.active .navbar-toggler-icon span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .navbar-toggler.active .navbar-toggler-icon span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+
+        /* Navbar Collapse */
+        .navbar-collapse {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+            padding: 5px 0;
+            cursor: pointer;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+
+        .contact-btn:hover {
+            background-color: #1e3f7a;
+        }
+
+        /* Preloader Styles - Fixed to cover full page */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+
+        #preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-container {
+            text-align: center;
+        }
+
+        .loader-logo {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .loader-text {
+            font-size: 18px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .loading-bar {
+            width: 200px;
+            height: 4px;
+            background-color: var(--border);
+            border-radius: 2px;
+            margin: 20px auto 0;
+            overflow: hidden;
+        }
+
+        .loading-progress {
+            width: 0%;
+            height: 100%;
+            background-color: var(--primary);
+            border-radius: 2px;
+            animation: loading 2s ease-in-out forwards;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--light-text);
+            margin-bottom: 30px;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: #1e3f7a;
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(44, 90, 160, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* Company Logo Section */
+        .company-logo {
+            background-color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .logo-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: var(--secondary);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .logo-img {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            background-color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+            border: 5px solid var(--primary);
+        }
+
+        .logo-img i {
+            font-size: 80px;
+            color: var(--primary);
+        }
+
+        .logo-text h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .logo-text p {
+            color: var(--light-text);
+            font-size: 18px;
+        }
+
+        /* About Section */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+
+        .section-title p {
+            color: var(--light-text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-img {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-img img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--light-text);
+        }
+
+        .stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--light-text);
+        }
+
+        /* Services Carousel Section */
+        .services-carousel {
+            background-color: var(--white);
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            position: relative;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .slide-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            color: white;
+            padding: 30px;
+        }
+
+        .slide-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255,255,255,0.7);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-btn:hover {
+            background-color: rgba(255,255,255,0.9);
+        }
+
+        .prev-btn {
+            left: 20px;
+        }
+
+        .next-btn {
+            right: 20px;
+        }
+
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--border);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .indicator.active {
+            background-color: var(--primary);
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(44, 90, 160, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .service-icon i {
+            font-size: 30px;
+            color: var(--primary);
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            color: var(--light-text);
+        }
+
+        /* Approach Section */
+        .approach {
+            background-color: var(--secondary);
+        }
+
+        .approach-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .approach-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+        }
+
+        .approach-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(44, 90, 160, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .approach-icon i {
+            font-size: 30px;
+            color: var(--primary);
+        }
+
+        .approach-text h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .approach-text p {
+            color: var(--light-text);
+        }
+
+        /* Process Section */
+        .process {
+            background-color: var(--white);
+        }
+
+        .process-steps {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background-color: var(--border);
+            z-index: 1;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            flex: 1;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .step-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .step-content p {
+            color: var(--light-text);
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        /* Market Insights Section */
+        .market-insights {
+            background-color: var(--secondary);
+        }
+
+        .insights-content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .insights-text {
+            flex: 1;
+        }
+
+        .insights-text h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .insights-text p {
+            margin-bottom: 20px;
+            color: var(--light-text);
+        }
+
+        .insights-stats {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .insight-stat {
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .insight-stat h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .insight-stat p {
+            color: var(--light-text);
+            font-size: 14px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--white);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            background-color: var(--secondary);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(44, 90, 160, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-icon i {
+            font-size: 24px;
+            color: var(--primary);
+        }
+
+        .contact-details h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            color: var(--light-text);
+        }
+
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            height: 100%;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo p {
+            max-width: 300px;
+            opacity: 0.8;
+        }
+
+        .footer-links h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .footer-links h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        .logo1{
+            width:350px;
+            height:350px;
+        }
+
+        /* Active Nav Link Styles */
+        nav a.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        nav a.active::after {
+            width: 100% !important;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .insights-content {
+                flex-direction: column;
+            }
+            
+            .process-steps {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            .process-steps::before {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                gap: 15px;
+            }
+            
+            .hero h2 {
+                font-size: 32px;
+            }
+            
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats {
+                justify-content: center;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .insights-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            /* Mobile navbar styles */
+            .navbar-toggler {
+                display: flex;
+            }
+            
+            .navbar-collapse {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: var(--white);
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease-in-out;
+                z-index: 1000;
+                padding: 80px 30px 30px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            
+            .navbar-collapse.show {
+                right: 0;
+            }
+            
+            .navbar-nav {
+                flex-direction: column;
+                gap: 0;
+                width: 100%;
+            }
+            
+            .nav-link {
+                padding: 15px 0;
+                font-size: 18px;
+                border-bottom: 1px solid var(--border);
+                width: 100%;
+                display: block;
+            }
+            
+            .nav-contact-btn {
+                margin-top: 20px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            /* Overlay - removed to prevent screen dimming */
+            .navbar-overlay {
+                display: none;
+            }
+            
+            /* Prevent body scroll when menu is open */
+            body.navbar-open {
+                overflow: hidden;
+            }
+            
+            /* Center align the "Professional Real Estate Consultant" title on mobile */
+            .about-text h3 {
+                text-align: center;
+            }
+            
+            /* Center align approach items on mobile */
+            .approach-item {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            
+            .approach-icon {
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .section {
+                padding: 50px 0;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .carousel-slide img {
+                height: 300px;
+            }
+            
+            .about-img img {
+                height: 300px;
+            }
+            
+            .loader-logo {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader-logo">
+                <!-- <img src="images/logo1.png" alt="BN Real Estate Consultants" style="width: 100%; height: 100%; object-fit: contain;"> -->
+                 Logo
+            </div>
+            <div class="loader-text">Loading...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+   
+    <header>
+        <nav class="navbar">
+            <div class="container header-container">
+                <a class="navbar-brand" href="#home">
+                    <i class="fas fa-home"></i>
+                    <h1>Logo</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+                
+                <div class="navbar-collapse">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#approach">My Approach</a>
+                        <a class="nav-link" href="#process">Process</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                    <a href="#contact" class="contact-btn nav-contact-btn">Get In Touch</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h2>Your Trusted Real Estate Consultant</h2>
+            <p>With over 18 years of experience in the real estate industry, I help clients find their dream properties and make smart investment decisions.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn btn-primary">My Services</a>
+                <a href="#contact" class="btn btn-secondary">Schedule Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Logo Section -->
+    <section class="company-logo">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-img">
+                    <!-- <img src="images/logo1.png" class="img-fluid logo1"> -->
+                     <h3>logo</h3>
+                </div>
+                <div class="logo-text">
+                    <h2>Real Estate Consultant</h2>
+                    <p>Your trusted partner in property solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Carousel Section -->
+    <section class="section services-carousel">
+        <div class="container">
+            <div class="section-title">
+                <h2>Property Types I Specialize In</h2>
+                <p>Expert guidance across all property categories</p>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Bungalows">
+                        <div class="slide-content">
+                            <h3>Bungalows</h3>
+                            <p>Expert buying and selling of single-story homes with character and space</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Flats">
+                        <div class="slide-content">
+                            <h3>Flats & Apartments</h3>
+                            <p>From studio apartments to luxury penthouses in prime locations</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Row Houses">
+                        <div class="slide-content">
+                            <h3>Row Houses</h3>
+                            <p>Connected homes with unique architectural character and community living</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Plots">
+                        <div class="slide-content">
+                            <h3>Land & Plots</h3>
+                            <p>Prime land for residential, commercial, or investment purposes</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Commercial">
+                        <div class="slide-content">
+                            <h3>Commercial Properties</h3>
+                            <p>Office spaces, retail units, and industrial properties for business growth</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-indicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Learn more about my background, expertise, and approach to real estate consulting</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/Brijesh.jpg" alt="Brijesh Nanavati">
+                </div>
+                <div class="about-text">
+                    <h3>Professional Real Estate Consultant</h3>
+                    <p>Hello, I'm <b>Mr abcd</b>, a dedicated real estate consultant with over 18 years of experience in guiding clients through every aspect of property transactions. Over the years, I've had the privilege of helping countless families, investors, and businesses find the right properties that truly meet their needs and aspirations.</p>
+                    <p>My expertise spans across a wide range of real estate services including land, plots, bungalows, row houses, flats, and shops — whether you're looking to buy, sell, or rent, I ensure a smooth and transparent process from start to finish. I believe that every client deserves personal attention and honest advice, which is why my approach focuses on understanding your goals, studying the market thoroughly, and providing the best possible solutions tailored to your requirements.
+
+                        In addition to property transactions, I also assist clients with financial guidance and loan services. Whether it's a home loan, mortgage loan, or any other form of real estate financing, I work closely with reliable banking and financial institutions to help you secure the right funding with ease and clarity.
+                        
+                        With a strong foundation built on trust, integrity, and professionalism, my mission is to make real estate dealings simple, stress-free, and rewarding for every client. Whether you're buying your dream home, investing in commercial property, or seeking the perfect rental opportunity, I'm here to support you at every step of your journey.
+                        
+                        Let's turn your real estate goals into reality — with expert guidance, transparent communication, and results you can rely on.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">18+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30,00,000+</div>
+                            <div class="stat-label">Property Sold</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+                <p>Comprehensive real estate solutions tailored to your unique needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Land Transactions</h3>
+                    <p>Expert guidance in buying, selling, and leasing land for residential, commercial, and agricultural purposes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-vector-square"></i>
+                    </div>
+                    <h3>Plot Investments</h3>
+                    <p>Strategic advice on plot purchases, sales, and development opportunities for maximum returns.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Bungalow Solutions</h3>
+                    <p>Complete assistance with bungalow purchases, sales, and rentals to match your lifestyle needs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Row-House Services</h3>
+                    <p>Expert handling of row-house transactions including buying, selling, and rental agreements.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Flat Transactions</h3>
+                    <p>Comprehensive support for apartment purchases, sales, and rental arrangements across all budgets.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Shop & Commercial</h3>
+                    <p>Specialized services for retail spaces including purchase, sale, and rental of shops and commercial properties.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Home Loan Assistance</h3>
+                    <p>Expert guidance in securing home loans with the best terms and interest rates from leading banks.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Mortgage Loans</h3>
+                    <p>Professional assistance with mortgage loans, leveraging property assets for financial flexibility.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Loan Advisory</h3>
+                    <p>Comprehensive loan consultation services to help you choose the right financing options for your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="section approach" id="approach">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Approach</h2>
+                <p>How I work with clients to achieve their real estate goals</p>
+            </div>
+            <div class="approach-content">
+                <div class="approach-item">
+                    <div class="approach-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="approach-text">
+                        <h3>Client-Centric Focus</h3>
+                        <p>I prioritize understanding your unique needs, preferences, and financial goals to provide personalized solutions that align with your vision.</p>
+                    </div>
+                </div>
+                <div class="approach-item">
+                    <div class="approach-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="approach-text">
+                        <h3>Market Expertise</h3>
+                        <p>With comprehensive market analysis and up-to-date knowledge, I provide insights that help you make informed decisions in any market condition.</p>
+                    </div>
+                </div>
+                <div class="approach-item">
+                    <div class="approach-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="approach-text">
+                        <h3>Value Optimization</h3>
+                        <p>My negotiation strategies and transaction management ensure you receive maximum value whether you're buying, selling, or investing.</p>
+                    </div>
+                </div>
+                <div class="approach-item">
+                    <div class="approach-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="approach-text">
+                        <h3>Trust & Confidentiality</h3>
+                        <p>I maintain the highest standards of professionalism, ensuring your information remains confidential and your interests are always protected.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Process</h2>
+                <p>A structured approach to ensure successful real estate transactions</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Consultation</h3>
+                        <p>We begin with an in-depth discussion to understand your goals, preferences, and budget.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Research & Analysis</h3>
+                        <p>I conduct thorough market research and property analysis to identify the best opportunities.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Property Selection</h3>
+                        <p>We review carefully curated options that match your criteria and arrange viewings.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Transaction & Closing</h3>
+                        <p>I handle all negotiations, paperwork, and processes to ensure a smooth closing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Insights Section -->
+    <section class="section market-insights">
+        <div class="container">
+            <div class="section-title">
+                <h2>Market Insights</h2>
+                <p>Current trends and data to inform your real estate decisions</p>
+            </div>
+            <div class="insights-content">
+                <div class="insights-text">
+                    <h3>Navigating Today's Real Estate Market</h3>
+                    <p>The real estate landscape is constantly evolving, with shifting market conditions, interest rates, and buyer preferences. My expertise helps clients navigate these changes successfully.</p>
+                    <p>Whether you're a first-time homebuyer, seasoned investor, or looking to sell your property, understanding current market dynamics is crucial for making informed decisions that align with your financial goals.</p>
+                    <p>I provide up-to-date market analysis, trend forecasts, and strategic advice tailored to your specific situation and objectives.</p>
+                </div>
+                <div class="insights-stats">
+                    <div class="insight-stat">
+                        <h4>5.2%</h4>
+                        <p>Average annual appreciation in residential properties</p>
+                    </div>
+                    <div class="insight-stat">
+                        <h4>28 Days</h4>
+                        <p>Average time on market for well-priced properties</p>
+                    </div>
+                    <div class="insight-stat">
+                        <h4>12% ROI</h4>
+                        <p>Average return on investment properties in prime locations</p>
+                    </div>
+                    <div class="insight-stat">
+                        <h4>97%</h4>
+                        <p>Client satisfaction rate with my consultation services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your real estate journey? Contact me today</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+
+                    <a style="color:#666666;text-decoration: none;" href="#"> 
+                    <div class="contact-item">
+                            <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 style="color:#000;">Phone Number</h4>
+                            <p>+91-12345 67890</p>
+                        </div>
+                    </div>
+                </a>
+
+                    <a style="color:#666666;text-decoration: none;" href="#." target="_blank">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 style="color:#000;">Whatsapp</h4>
+                            <p>
+                                💬 Chat on WhatsApp
+                              </p>
+                        </div>
+                    </div>
+                </a>
+
+              
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4 style="color:#000;">Email Address</h4>
+                            <p><a href="#" style="color:#666666;text-decoration: none;">abcd10@gmail.com</a></p>
+                        </div>
+                    </div>
+                   
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 8:00 PM<br>Saturday: 10:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14879.52852125!2d72.79644015000001!3d21.19684085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04c351ceae251%3A0x1d35b30f855a2c36!2sAdajan%2C%20Surat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1761061413370!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Logo</h2>
+                    <p>Your trusted real estate consultant with over 18 years of experience helping clients achieve their property goals.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#approach">My Approach</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Land Transactions</a></li>
+                        <li><a href="#services">Plot Investments</a></li>
+                        <li><a href="#services">Bungalow Solutions</a></li>
+                        <li><a href="#services">Row-House Services</a></li>
+                        <li><a href="#services">Flat Transactions</a></li>
+                        <li><a href="#services">Loan Assistance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Name. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Consolidated JavaScript for all functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // ===== PRELOADER =====
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                // Hide body content until preloader is done
+                document.body.style.overflow = 'hidden';
+                
+                setTimeout(function() {
+                    preloader.classList.add('hidden');
+                    document.body.style.overflow = '';
+                    setTimeout(function() {
+                        preloader.remove();
+                    }, 500);
+                }, 1500);
+            }
+
+            // ===== CAROUSEL FUNCTIONALITY =====
+            const slides = document.querySelector('.carousel-slides');
+            const slideCount = document.querySelectorAll('.carousel-slide').length;
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            const indicators = document.querySelectorAll('.indicator');
+            
+            if (slides && slideCount > 0) {
+                let currentSlide = 0;
+                
+                function goToSlide(index) {
+                    if (index < 0) index = slideCount - 1;
+                    if (index >= slideCount) index = 0;
+                    
+                    slides.style.transform = `translateX(-${index * 100}%)`;
+                    
+                    // Update indicators
+                    indicators.forEach((indicator, i) => {
+                        indicator.classList.toggle('active', i === index);
+                    });
+                    
+                    currentSlide = index;
+                }
+                
+                if (prevBtn) prevBtn.addEventListener('click', () => {
+                    goToSlide(currentSlide - 1);
+                });
+                
+                if (nextBtn) nextBtn.addEventListener('click', () => {
+                    goToSlide(currentSlide + 1);
+                });
+                
+                // Add click events to indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.addEventListener('click', () => {
+                        goToSlide(index);
+                    });
+                });
+                
+                // Auto-advance slides every 5 seconds
+                setInterval(() => {
+                    goToSlide(currentSlide + 1);
+                }, 5000);
+            }
+
+            // ===== MOBILE NAVBAR =====
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const body = document.body;
+            
+            function toggleNavbar() {
+                navbarToggler.classList.toggle('active');
+                navbarCollapse.classList.toggle('show');
+                body.classList.toggle('navbar-open');
+            }
+            
+            function closeNavbar() {
+                navbarToggler.classList.remove('active');
+                navbarCollapse.classList.remove('show');
+                body.classList.remove('navbar-open');
+            }
+            
+            if (navbarToggler) {
+                navbarToggler.addEventListener('click', toggleNavbar);
+            }
+
+            // ===== SMOOTH SCROLLING & NAVIGATION =====
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerHeight = document.querySelector('header').offsetHeight;
+                        const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                        
+                        // Close mobile menu if open
+                        if (window.innerWidth <= 768 && navbarCollapse && navbarCollapse.classList.contains('show')) {
+                            closeNavbar();
+                        }
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // ===== ACTIVE NAV LINK DETECTION =====
+            function setActiveNavLink() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', setActiveNavLink);
+            window.addEventListener('load', setActiveNavLink);
+
+            // ===== WINDOW RESIZE HANDLER =====
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    closeNavbar();
+                }
+            });
+
+            // ===== ESCAPE KEY HANDLER =====
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    closeNavbar();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

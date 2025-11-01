@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login - Shiku Infra</title>
+  <link rel="stylesheet" href="login.css" />
+  <script defer src="login.js"></script>
+</head>
+<body>
+  <div class="login-container">
+<form id="otpLoginForm">
+  <h2>Admin Login</h2>
+
+  <div class="input-group">
+    <label for="username">Username</label>
+    <input type="text" id="username" required />
+  </div>
+
+  <div class="input-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" required />
+  </div>
+
+  <div class="input-group">
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" required />
+  </div>
+
+  <button type="button" id="sendOtpBtn">Send OTP</button>
+
+  <div class="input-group" id="otpSection" style="display: none;">
+    <label for="otp">Enter OTP</label>
+    <input type="text" id="otp" required />
+    <button type="submit">Verify OTP</button>
+  </div>
+
+  <p id="login-error"></p>
+</form>
+<div class="back-button-below">
+    <a href="shiku.html">← Back to Home</a>
+  </div>
+  </div>
+</body>
+</html>

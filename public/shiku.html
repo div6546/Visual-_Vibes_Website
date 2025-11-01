@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>Shiku Infra Pvt. Ltd.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo-container">
+    <img src="img/shikulogo.png" alt="Shiku Infra Logo" class="logo" />
+    <span class="company-name">SHIKU INFRA PRIVATE LIMITED</span>
+  </div>
+  <nav class="desktop-nav">
+    <ul class="nav-links">
+      <li><a href="#home"><h3>Home</h3></a></li>
+      <li><a href="#about"><h3>About</h3></a></li>
+      <li><a href="#services"><h3>Services</h3></a></li>
+      <li><a href="#projects"><h3>Projects</h3></a></li>
+      <li><a href="gallery.html"><h3>Gallery</h3></a></li>
+      <li><a href="#contact"><h3>Contact</h3></a></li>
+      <li><a href="login.html"><h3>Login</h3></a></li>    </ul>
+  </nav>
+
+  <!-- Hamburger Icon -->
+   <button class="mobile-menu-icon" onclick="toggleMobileMenu()" aria-label="Toggle Mobile Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<div id="mobile-menu" class="mobile-menu">
+  <div class="close-icon" onclick="toggleMobileMenu()">✕</div>
+  <ul>
+    <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
+    <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
+    <li><a href="#services" onclick="toggleMobileMenu()">Services</a></li>
+    <li><a href="#projects" onclick="toggleMobileMenu()">Projects</a></li>
+    <li><a href="gallery.html" onclick="toggleMobileMenu()">Gallery</a></li>
+    <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+
+  </ul>
+</div>
+</header>
+<div class="navbar-curve"></div>
+
+<!-- Hero -->
+<section class="shiku-hero" id="home">
+  <div class="shiku-left">
+    <h1 data-aos="fade-right" data-aos-delay="100">Constructing with Purpose, <br>Delivering with Pride</h1>
+    <h2 id="hero-phrase" data-aos="fade-left" data-aos-delay="200">Where Quality Meets the Road – Shiku Infra</h2>
+    <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+      Delivering excellence in road construction, infrastructure, and civil works with precision, safety, and speed.
+    </p>
+    <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="400">
+      <button class="btn-primary shine" onclick="toggleMore()">READ MORE</button>
+      <button class="btn-primary shine" onclick="scrollToReachUs()">REACH US</button>
+    </div>
+  </div>
+
+  <div class="shiku-right" data-aos="fade-up" data-aos-delay="500">
+    <div class="img-container">
+      <img src="img/homeimg.jpg" alt="Engineer or Road Construction" />
+      <div class="img-badge">20+<br />Successful Projects</div>
+    </div>
+  </div>
+  </section>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+
+<!-- About -->
+<section id="about" class="about-section fade-in">
+  <div class="about-left slide-in-left">
+    <div class="about-text">
+      <h2>WELCOME TO</h2>
+      <h3>SHIKU INFRA</h3>
+      <p class="tagline">We are the leader with 15 years of Experience in the construction Market</p>
+    </div>
+
+    <!-- Catalog box moved here -->
+    <div class="catalog-box">
+      <h4>📄 Company Catalog</h4>
+      <p>You can download our official catalog to explore all our services, projects, and capabilities.</p>
+      <a href="SHIKU CATALOGUE pdf.pdf" target="_blank" class="btn-download">
+        📥 View / Download PDF
+      </a>
+    </div>
+  </div>
+
+  <div class="about-details slide-in-right">
+    <p>
+      SHIKU INFRA PRIVATE LIMITED is a trusted infrastructure company delivering
+      high-quality building and road construction services since 2022. We are recognized among
+      the experienced leaders in the field of road and infrastructure development.
+    </p>
+    <p>
+      Our company is an accomplished project manager, offering a wide range of construction solutions.
+      We specialize in complete design-build services, collaborating closely with engineering and design firms.
+      From start to finish, we provide expert guidance to ensure projects are completed with precision.
+    </p>
+    <p>
+      At SHIKU INFRA, we focus on meeting specific client needs, adhering to project timelines, and delivering
+      results that exceed expectations.
+    </p>
+    <button class="btn-primary shine" onclick="toggleMore()">READ MORE</button>
+  </div>
+</section>
+
+<!-- MORE About Enhanced -->
+<section id="more-info" class="more-info-section" style="display: none;">
+  <div class="container" data-aos="fade-up">
+    <h2 class="section-title">About Us</h2>
+    <p>
+      The directors and management of SHIKU INFRA PRIVATE LIMITED are committed to operate every aspect of the business to those standards that offer the highest possible quality of service to all clients. This is supported by a progressive management style that encourages the Quality culture throughout the Company.
+      To reinforce this commitment, a Quality Management System is in place. Management is committed to its continuous improvement by establishing and reviewing quality objectives for all areas of the company. This ensures that the company operates effectively, efficiently, and meets customer needs.
+    </p>
+    <p>
+      The effectiveness of the Quality Management System is monitored by planned audits, management reviews, and effective corrective and preventive action. All personnel are aware of the management’s commitment and are encouraged to demonstrate their support through continuous participation.
+      SHIKU INFRA PRIVATE LIMITED accords utmost importance to quality and takes pride in delivering high-quality services. The company maintains a rigorous quality control program that includes continuous awareness, communication, and implementation. The quality review process begins at the outset and continues until completion.
+      Quality Assurance Reviews and Audits are meticulously documented through a comprehensive reporting system.
+
+    </p>
+    <!-- Tabs Section -->
+<div class="about-tabs" style="text-align: center; margin-top: 40px;">
+  <button class="tab-btn active" onclick="showTab('vision')">Vision & Mission</button>
+  <button class="tab-btn" onclick="showTab('security')">Security & Safety</button>
+  <button class="tab-btn" onclick="showTab('quality')">Quality & Policy</button>
+  <button class="tab-btn" onclick="showTab('servicess')">Services & Solution</button>
+  <button class="tab-btn" onclick="showTab('equipment')">Equipment & Tools</button>
+</div>
+
+<!-- Tab Content -->
+<div id="vision" class="tab-content active">
+  <h3>VISION & MISSION</h3>
+  <p><strong>Vision:</strong>
+ SHIKU INFRAPRIVATELIMITED has set of vision to become a premier solution provider company providing world leadership in complete engineering and technical solution for the construction and engineering society. We are trying to be the leader in client satisfaction, innovation, professionalism and superior quality solution. We are the architect of responsive, fast, cost effective and creative solution to our clients benefit, compensation and their critical needs.<br>
+Our Team combine technical excellence with superior understanding of client need and the environment in which our client operate. We are committed to working partnerships with our clients that add value and consistently exceed expectations.
+    </p> <br>
+    <p><strong>Mission:</strong>
+      To form long-term relationships of value with our clients and partners, using quality construction and engineering solution and employing the Best resource and latest techniques.
+      </p>
+</div>
+
+<div id="security" class="tab-content">
+  <h3>SECURITY & SAFTEY</h3>
+  <p>
+    The manpower of SHIKU INFRA PRIVATE LIMITED is its most valuable resource. To ensure a safe workplace for SHIKUINFRAPRIVATELIMITED
+staff and also to protect clients' investment and facilities, the Group has evolved a strong health and safety culture driven by a goal to achieve "zero accidents" and "zero man-hours lost". The company fully acknowledges that by complying with stringent Health, Safety and Environment(HSE)procedures,zero accidentscanbeaccomplished.
+  </p><br>
+  <p><strong>SOME OF OUR HSE PROCEDURES ARE :</strong>
+     <ul class="bullet-list">
+        <li>Use of full range of Personal Equipment (PPE)</li>
+        <li>Use of Safe Tools & Equipment</li>
+        <li>Trained & Competent Staff</li>
+        <li>Regular on-site Safety Audits</li>
+      </ul>
+  </p> 
+</div>
+
+<div id="quality" class="tab-content">
+      <h3>QUALITY & POLICY</h3>
+    <p>
+    <strong>Customer First:</strong> We are dedicated to providing comprehensive training to our employees, ensuring they are equipped to fulfill their responsibilities efficiently and professionally.
+      </p>
+      <p>
+        <strong>Determining Training Needs:</strong> Employees are assessed annually by their managers to evaluate current competencies and identify additional training requirements.
+      </p>
+      <ul class="bullet-list">
+        <li>Focus on major functional areas</li>
+        <li>Transparent procurement processes</li>
+        <li>Strict process control</li>
+        <li>Thorough inspection and testing</li>
+        <li>Clear inspection and test status reporting</li>
+        <li>Control of non-conforming products</li>
+      </ul>
+    </div>
+</div>
+
+<div id="servicess" class="tab-content">
+  <h3>SERVICE & SOLUTION</h3>
+  <p>
+  <strong>Highway Road construction:</strong>
+National Highways form backbone to any State and India maintains a remarkable network of such highways. We've helped the country immensely in its endeavors to maintain a fine connectivity with rest of the country by taking up and finishing construction works of National Highways. With decades of experience, expertise and required workforce, we've been consistently supporting the cause of national highway construction in INDIA.<br>
+<strong>Interstate Road Construction:</strong>
+have a smooth network of roads and effective connectivity among them which has largely been possible due to construction firms like ours. We have constantly been developing, upgrading and maintaining interstate roads by timely completing construction activities for a better passage among the INDIA Suburbs.<br>
+<strong>Express Highway:</strong>
+Besides successfully constructing single and double lane highways, our range has been allowing us to take up and finish Express highways in all over INDIA. Unlike every other road projects, a far more expertise and technicality goes into the construction of express highways. The task is finished with desired dexterity and timely manner.
+  </p>
+</div>
+
+<div id="equipment" class="tab-content">
+  <h3>Heavy Equipments Division</h3>
+
+  <p><strong>We Are Dealing In:</strong></p>
+
+  <div class="equipment-grid">
+    <ul class="equipment-list">
+      <li>6 Excavator</li>
+      <li>3 Grader</li>
+      <li>14 HYVA</li>
+      <li>3 Water Tanker</li>
+      <li>5 LMV</li>
+      <li>2 Tractor</li>
+      <li>2 JCB</li>
+    </ul>
+    <ul class="equipment-list">
+      <li>2 DG Sets</li>
+      <li>1 Crusher - 250 TPH</li>
+      <li>1 Crusher - 200 TPH</li>
+      <li>1 Wheel Loader</li>
+      <li>1 Dozer</li>
+      <li>1 Diesel Bowser</li>
+    </ul>
+  </div>
+
+  <p class="equipment-tagline">
+    “We provide all these equipments to our <strong>value-able clients</strong> on demand”
+  </p>
+</div>
+    <div class="btn-container" data-aos="zoom-in" data-aos-delay="400">
+      <button class="btn-primary" onclick="hideMoreInfo()">GO BACK</button>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="services-section">
+  <h2>Our Best Services</h2>
+  <div class="services-grid">
+
+    <!-- Excavation Services -->
+    <div class="service-box">
+      <img src="img/excavation1.png" alt="Excavation Icon" class="service-icon" />
+      <h3>Excavation Services</h3>
+      <a href="services/excavation.html" class="read-more-btn">Read More</a>
+    </div>
+
+    <!-- Grading & Leveling -->
+    <div class="service-box">
+      <img src="img/grading.png" alt="Grading Icon" class="service-icon" />
+      <h3>Grading & Leveling</h3>
+      <a href="services/Grading.html" class="read-more-btn">Read More</a>
+    </div>
+
+    <!-- Land Reclamation -->
+    <div class="service-box">
+      <img src="img/land.jpg" alt="Land Icon" class="service-icon" />
+      <h3>Land Reclamation & Erosion Control</h3>
+      <a href="services/land.html" class="read-more-btn">Read More</a>
+    </div>
+
+    <!-- Road Construction -->
+    <div class="service-box">
+      <img src="img/road.avif" alt="Road Icon" class="service-icon" />
+      <h3>Road & Highway Construction</h3>
+      <a href="services/road.html" class="read-more-btn">Read More</a>
+    </div>
+
+    <!-- Utility Installation -->
+    <div class="service-box">
+      <img src="img/utility.png" alt="Utility Icon" class="service-icon" />
+      <h3>Utility Installation</h3>
+      <a href="services/utility.html" class="read-more-btn">Read More</a>
+    </div>
+
+    <!-- Demolition -->
+    <div class="service-box">
+      <img src="img/demolition.png" alt="Demolition Icon" class="service-icon" />
+      <h3>Demolition & Removal</h3>
+      <a href="services/demolition.html" class="read-more-btn">Read More</a>
+    </div>
+
+    <!-- Earth Retaining Structures -->
+    <div class="service-box">
+      <img src="img/earth1.png" alt="Earth Icon" class="service-icon" />
+      <h3>Earth Retaining Structures</h3>
+      <a href="services/earth.html" class="read-more-btn">Read More</a>
+    </div>
+
+    <!-- Material Hauling -->
+    <div class="service-box">
+      <img src="img/material1.png" alt="Material Icon" class="service-icon" />
+      <h3>Material Hauling & Disposal</h3>
+      <a href="services/material.html" class="read-more-btn">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects" class="projects-executed">
+  <h2>Projects Executed</h2>
+  <div class="executed-grid">
+
+    <div class="executed-box fade-in">
+      <img src="img/bullet.jpeg" alt="Bullet Train">
+      <h3>L&T</h3>
+      <p>Bullet Train, Mumbai to Ahmedabad</p>
+    </div>
+
+    <div class="executed-box fade-in">
+      <img src="img/gmrr.png" alt="GMR DDU">
+      <h3>GMR</h3>
+      <p>Railway Project, Kanpur to DDU (9km – 3.7 Lac Cum)</p>
+    </div>
+
+    <div class="executed-box fade-in">
+      <img src="img/mopa.avif" alt="Mopa Airport">
+      <h3>MEGAWIDE</h3>
+      <p>Mopa Airport, Goa – 1.3 Lac Cum</p>
+    </div>
+
+    <div class="executed-box fade-in">
+      <img src="img/oseexpress.webp" alt="OSE Expressway">
+      <h3>OSE</h3>
+      <p>Expressway, Ghazipur – 4.1 Lac Cum</p>
+    </div>
+
+    <div class="executed-box fade-in">
+      <img src="img/pncexpress.avif" alt="PNC Expressway">
+      <h3>PNC</h3>
+      <p>Expressway, Azamgarh – 1.8 Lac Cum</p>
+    </div>
+
+    <div class="executed-box fade-in">
+      <img src="img/mmrdapiller.jpg" alt="MMRDA Metro">
+      <h3>MMRDA</h3>
+      <p>Metro Project – Ghatkopar to Sakinaka (Pillar Excavation)</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projects Clients-->
+<section class="projects-section">
+  <h2>Our Valuable Clients</h2>
+  <div class="slider-wrapper">
+    <div class="projects-gallery">
+      <!-- Original logos -->
+      <div class="project-card"><img src="img/larsen.avif" alt="L&T"></div>
+      <div class="project-card"><img src="img/mmrda.png" alt="MMRDA"></div>
+      <div class="project-card"><img src="img/megawide.png" alt="MEGAWIDE"></div>
+      <div class="project-card"><img src="img/pnc.png" alt="PNC"></div>
+      <div class="project-card"><img src="img/gmr.png" alt="GMR"></div>
+      <div class="project-card"><img src="img/oriental.png" alt="GMR"></div>
+
+      <!-- Duplicate logos for infinite scroll effect -->
+    <div class="project-card"><img src="img/larsen.avif" alt="L&T"></div>
+      <div class="project-card"><img src="img/mmrda.png" alt="MMRDA"></div>
+      <div class="project-card"><img src="img/megawide.png" alt="MEGAWIDE"></div>
+      <div class="project-card"><img src="img/pnc.png" alt="PNC"></div>
+      <div class="project-card"><img src="img/gmr.png" alt="GMR"></div>
+      <div class="project-card"><img src="img/oriental.png" alt="GMR"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+  <!-- Our Team Section -->
+<section id="team" class="team-section">
+  <h2>Our Team</h2>
+
+  <div class="team-cards">
+    <div class="team-card">
+      <div class="team-circle">Team Member</div>
+      <h3>Mr. UJJWAL TRIKHA</h3>
+      <p>Director</p>
+    </div>
+    <div class="team-card">
+      <div class="team-circle">Team Member</div>
+      <h3>Mr. VIVEK RAI</h3>
+      <p>Director</p>
+    </div>
+    <div class="team-card">
+      <div class="team-circle">Team Member</div>
+      <h3>Mr. SURESH SINGH</h3>
+      <p>Director</p>
+    </div>
+    <div class="team-card">
+      <div class="team-circle">Team Member</div>
+      <h3>Mr. PANKAJ TIWARI</h3>
+      <p>Director</p>
+    </div>
+  </div>
+
+  <!-- Organization Chart -->
+  <div class="org-chart">
+    <h3>Organizational Manpower</h3>
+    <div class="org-flow">
+      <div class="org-box">1 General Manager</div>
+      <div class="org-box">1 Project Manager</div>
+      <div class="org-box">2 Senior Engineer</div>
+      <div class="org-box">4 Site Engineer</div>
+      <div class="org-box">4 Surveyor</div>
+      <div class="org-box">15 Supervisor</div>
+      <div class="org-box">20 Operator, Helper</div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section-->
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p class="section-subtitle">Rach Us For any Query</p>
+
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="info-block">
+        <img src="icons/phone.png" alt="Phone Icon" class="icon-img" />
+        <div>
+          <h3>Phone</h3>
+          <p>+91 9175590519<br />+91 7977692851</p>
+
+        </div>
+      </div>
+      <div class="info-block">
+        <img src="icons/email.png" alt="Email Icon" class="icon-img" />
+        <div>
+          <h3>Email</h3>
+          <p>info@shikuinfra.com</p>
+          <p>shikuinfra@gmail.com</p>
+        </div>
+      </div>
+      <div class="info-block">
+        <img src="icons/address.png" alt="Location Icon" class="icon-img" />
+        <div>
+          <h3>Address</h3>
+          <p>
+          Office no 5, 1st Floor, Ram Mansion, N.F Road, Colaba, Mumbai 400001
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Form -->
+    <form id="contactForm" class="contact-form">
+      <input type="text" name="name" id="name" placeholder="Your Name" required />
+      <input type="email" name="email" id="email" placeholder="Your Email" required />
+      <input type="text" name="phone" id="phone" placeholder="Your Phone Number" required />
+      <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn-primary shine" type="submit">Submit</button>
+      <p id="form-status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+  <footer class="footer">
+  <p>&copy; 2024, Shiku Infra Pvt. Ltd. All Rights Reserved</p>
+  </footer>
+  <!-- Scroll to top button -->
+<button id="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">⬆</button>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919175590519" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+<img src="img/WhatsApp.png" alt="WhatsApp">
+</a>
+</body>
+</html>

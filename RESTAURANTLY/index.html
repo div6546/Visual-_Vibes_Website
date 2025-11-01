@@ -1,0 +1,1406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="restaurantly.css"> -->
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      body{
+    margin:0;
+    padding:0;
+    background-color:#000 !important;
+    color: #fff;
+}
+.right_nav a{
+    transition:0.4s all;
+    font-size:18px;
+    color:white !important;
+}
+.right_nav a:hover{
+    border:1px solid #fff;
+    border-radius:20%;
+    font-size:20px;
+    color:#cda35e !important;
+}
+.nav1{
+    height:75px;
+    font-size:17px;
+     
+}
+
+.sec-1 a{
+    color:white;
+    transition:0.6s all;
+}
+.sec-1 a:hover{
+    background-color: #f39d1a;
+    font-size: 19px;
+    border-radius:20px;
+    color:#fff;
+}
+
+
+.main1{
+    /* background-image: url('https://cdn.theculturetrip.com/wp-content/uploads/2016/12/the-restaurant-dining-room.jpg'); */
+    /* background-image: url('https://thenudge.com/wp-content/uploads/2017/02/london_restaurant_bible.jpg'); */
+    /* background-image: url('https://www.stylist.co.uk/images/app/uploads/2019/04/12103115/the-court-restaurant-london-2.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress'); */
+    background-image: url('https://wallpapercave.com/wp/wp1874166.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top:4%;
+    text-align: center;
+    cursor:pointer;
+}
+@media(max-width:576px){
+    .med1{
+        padding-top:7%;
+    }
+    .btn1{
+        margin-top:8%;
+    }
+}
+@media(max-width:992px){
+    .sec-2{
+        margin-top:10%;
+    }
+}
+@media(max-width:498px){
+    .sec-2{
+        margin-top:15%;
+    }
+}
+@media(max-width:358px){
+    .sec-2{
+        margin-top:25%;
+    }
+}
+.sec-2{
+    
+    padding-top:9%;
+}
+.btn1{
+    margin-left:15%;
+    margin-top:7%;
+}
+.btn2{
+    margin-left:10%;
+}
+.sec-2 button{
+    border: 1px solid #cda45e;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #cda45e;;
+    border-radius: 50px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width:150px;
+    transition:0.6s all;
+}   
+.sec-2 button:hover{
+   color:#cda45e;
+   font-size:16px;
+}
+
+.main2{
+    background-image: url('https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color:white;
+    align-items: center;
+    cursor:pointer;
+}
+.ann1{
+    animation-name: ann1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    position:relative;
+    transition:0.8s;
+}
+@keyframes ann1{
+    0%{
+        transform: translateX(-100%);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(1%);
+        opacity:1;
+    }
+}
+.ann2{
+    animation-name: ann2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    position:relative;
+    transition:0.8s;
+}
+@keyframes ann2{
+    0%{
+        transform: translateX(100%);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(-1%);
+        opacity:1;
+    }
+}
+.sec3::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;  
+    z-index: -1;
+}
+.main2 h6{
+    padding:40px 0;
+    transition:0.8s all;
+}
+.main2 h5{
+    transition:0.8s all;
+}
+.main2 h5:hover{
+    color:#cda45e;
+    /* font-size:15px; */
+}
+.main2 h6:hover{
+    color:#cda45e;
+    /* font-size:25px; */
+}
+.main2 p{
+    transition:0.5s all;
+}
+.main2 p:hover{
+    color:#cda45e; 
+    /* font-size:20px; */
+}
+.fa1{
+    border:1px solid #cda45e;
+    border-radius:100%;
+    color:#cda45e;
+}
+.po{
+    margin-top:5%;
+}
+.p1{
+    padding:0 7px;
+}
+.sec3{
+    background-color:rgb(0, 0, 0, 0.8);
+    padding-top:5%;
+}
+.img2{
+    height:400px;
+    width:550px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    transition:0.8s all;
+}
+.img2:hover{
+   transform:scale(1.1,1.1);
+   border:4px solid #cda45e;
+}
+.main3{
+    padding-top:10%;
+    text-align: center;
+}
+.card1{
+    border:1px solid #cda45e;
+    background-color: #000;
+    text-align: left !important;
+    color:#fff;
+    transition: 0.8s all;
+    margin-top:5%;
+    padding:3%;
+    margin-top:8% !important;
+    animation-name: ann3;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    position:relative;
+    transition:0.8s all;
+    cursor:pointer;
+}
+@keyframes ann3 {
+    0%{
+        transform:scale(0.0, 0.0);
+    }
+    100%{
+        transform:scale(1 ,1);
+    }
+}
+.card1:hover{
+    background-color:#6c757d;
+    border:3px solid #cda45e;
+    transform:scale(1.1 , 1.1);
+}
+.card1 h2{
+    color:#cda45e;
+}
+.main4{
+    text-align: center;
+    background-image: url('https://images.alphacoders.com/913/thumb-1920-913971.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-top: 10%;
+}
+.nav2{
+    padding-top:4% !important;
+    text-align:center;
+}
+.nav2 a{
+    color:#fff;
+    padding:15px;
+    text-decoration: none;
+    transition: 0.8s all;
+}
+.nav2 ul{
+    text-align: center;
+}
+.nav2 li{
+    display:inline-block;
+    list-style-type: none;
+}
+.nav2 a:hover{
+    background-color: #cda45e;
+    color:#fff;
+    border-radius:10px;
+    text-decoration: none;
+    font-size:20px;
+}
+.menu-image{
+    width:75px;  
+    border-radius:100%;
+    border:1px solid;
+}
+.main4 p{
+    color:#fff;
+}
+.mrp{
+    color:#cda45e;
+}
+.menu-items{
+    margin-top:75px;
+    align-self: auto;
+    animation-name: ann4;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    position:relative;
+    transition:0.8s all;
+    cursor:pointer;
+}
+@keyframes ann4 {
+    0%{
+        transform:scale(0.1,0.1);
+    }
+    100%{
+        transform:scale(1 , 1);
+    }
+}
+.menu-items p{
+    transition:0.7s all;
+}
+.menu-items p:hover{
+    background-color: #000;
+    border:2px solid #cda45e;
+    font-size: 20px;
+    border-radius:25px;
+}
+.sec5{
+    background: rgba(0, 0, 0, 0.8);
+    padding-top:7%;
+}
+.sec5::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;  
+    z-index: -1;
+}
+.img3{
+    height:390px;
+    width:390px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    transition:0.8s all;
+    border-radius:100%; 
+    animation-name: imgani;
+}
+@keyframes imgani{
+    0%{
+        transform:translateY(100%);
+    }
+    100%{
+        transform:translateY(-1%);
+    }
+}
+.img3:hover{
+   transform:scale(1.1,1.1);
+}
+.padtop{
+    padding-top:5%;
+}
+.main5{
+    padding-top:10%;
+    text-align: center;
+}
+.vertical{
+    border-left: 6px solid #cda45e;
+      height: 325px;
+      position:absolute;
+      right:0%;
+}
+.navbar3{
+    display:inline-flex;
+    width:300px;
+    height:200px;
+}
+.nav3 a{
+   
+    color:#fff;
+    text-decoration: none;
+    transition:0.4s all;
+}
+.nav3 a:hover{
+    background-color:#cda45e;
+    border:2px solid #fff;
+    transform:scale(0.8,0.8);
+    font-size:20px;
+    color:#000;
+    text-decoration: none;
+    border-radius:30%;
+    height:5%;
+}
+
+.nav3:hover{
+    height:100px !important;
+    width:300px !important;
+}
+.nav3 li{
+    list-style-type: none;
+    padding-top:20%;
+}
+.section-8{
+    color:#fff;
+    animation-name: main5-animation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    position:relative;
+    transition:0.8s all;
+}
+@keyframes main5-animation{
+    0%{
+        transform:translateY(100%);
+    }
+    100%{
+        transform: translateY(-1%);
+    }
+}
+.horizontal{
+    border: 4px solid #cda45e;
+    width: 287px;
+    position:absolute;     
+}
+.r1{
+    color:#fff;
+}
+.main6{
+    background-image: url('https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/events-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top:0%;
+    text-align: center;
+    cursor:pointer;
+}
+.r1{
+    text-align: left !important;
+}
+.section9{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.lr1{
+    margin-top:4%;
+}
+.main6 img{
+    width:600px;
+    height:330px;
+}
+.text-row-1{
+    padding-top:1%;
+}
+.tex-row-0{
+    margin-top:4%;
+}
+.main7{
+    padding-top:8%;
+    text-align: center;
+}
+.main7 button{
+    border: 2px solid #625b4b;
+    background-color: rgba(0, 0, 0, 0.9);
+    color:#cda45e;
+    border-radius: 50px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width:150px;
+    transition:0.8s all;
+}
+.main7 button:hover{
+    font-size:18px;
+    width:156px;
+    color:#cda45e;
+}
+.card01{
+    border:1px solid #cda45e;
+    color:#fff;
+    padding:5%;
+    transition: 0.8s all;
+    margin-top:6%;
+}
+.card01:hover{
+    background-color: #625b4b;
+    border:5px solid #f39d1a;
+    font-size: 18px;
+}
+.card01 img{
+    border-radius:100%;
+    width:115px;
+}
+.main8{
+    padding-top:8%;
+    background-color: #1a1814;
+    margin-top:4%;
+    text-align:center;
+    padding-bottom:10%;
+    cursor:pointer;
+}
+.row2{
+    padding-top:36px;
+}
+.main9{
+    padding-top:5%;
+    cursor:pointer;
+}
+.pic1:hover{
+        transform:scale(1.1,1.1);
+        transition: 0.8s all;
+        /* border: 4px solid #cda45e; */
+}
+.main11{
+    color:#fff;
+}
+.contactusfa{
+    font-size:25px !important;
+    border:1px solid;
+    border-radius:50%;
+    background-color: #cda45e;
+    /* width: 35px; */
+    align-items:center;
+}
+.pad2{
+    margin-top:20px;
+}
+.carousel-indicators{
+    bottom:-100px !important;
+}
+.wrapper1 img{
+    position:relative;
+}
+.info1{
+   width: 100%;
+   height:100%;
+   position:absolute;
+   top:0;
+   left:0;
+   background: rgba(0,0,0,0.6);
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   opacity:0;
+   transition:0.6s all;
+   cursor:pointer;
+}
+.info1:hover{
+    opacity:1;
+}
+.info1 h2{
+    font-size:40px;
+    color:#fff;
+    font-weight:bold;
+}
+.wrapper1{
+    margin-top:10%;
+}
+.info1 h5{
+    font-size:21px;
+    font-weight:bold;
+    color:#fff
+}
+.info1 > *{
+    transform: translateY(25px);
+    transition:0.6s;
+}
+.info1:hover > *{
+    transform: translateY(0px);
+    
+} 
+.main11{
+    margin-top:10%;
+}
+.cheffa{
+    padding:0 10px;
+}
+.m11s1{
+    margin-top:10%;
+}
+.m11s01{
+    padding-top:3%;
+}
+.main11{
+    cursor:pointer;
+}
+.pd1{
+    margin:22px 0;
+}
+.main11 button{
+    border: 2px solid #625b4b;
+    background-color: #cda45e;
+    color:#fff;
+    border-radius: 50px;
+    padding: 8px 0px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    width:150px;
+    transition:0.8s all;
+}
+.main11 button:hover{
+    font-size:18px;
+    width:156px;
+    color:#fff
+}
+.bt{
+    text-align: center;
+    margin-top: 3%;
+}
+.footerlast{
+    margin-top:5%;
+    cursor:pointer;
+}
+.ho1{
+    transition:0.5s all;
+}
+.ho1:hover{
+    color:#cda45e;
+}
+.myinfo{
+    text-align:right;
+    padding-top:3%;
+}
+.myinfo hr{
+    color:#cda45e;
+}
+    </style>
+     
+  </head>
+  <body>
+
+
+
+
+
+    <div class="main1">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-#fff">
+        <a class="navbar-brand" href="#"><h3 style="font-weight:500"><b>RESTAURANTLY</b></h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto right_nav">
+            <a class="nav-item nav-link" href="#m1">HOME</a>
+            <a class="nav-item nav-link" href="#m2">ABOUT</a>
+            <a class="nav-item nav-link" href="#menu">MENU</a>
+            <a class="nav-item nav-link" href="#specials">SPECIALS</a>
+            <a class="nav-item nav-link" href="#events">EVENTS</a>
+            <a class="nav-item nav-link" href="#chefs">CHEFS</a>
+            <a class="nav-item nav-link" href="#gallery">GALLERY</a>
+          </div>
+        </div>
+      </nav></nav>
+          <!--navbar end-->
+        <div class="sec-2" id="m1">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg 6">
+                <h1 style="color:#fff"><b><i>Welcome to <span style="color:#CDA45E;">Restaurantly</i></b></h1>
+                <h3 style="color:#fff; margin-top:5%;margin-bottom:5%;" class="med1"><i>"Delivering great food for more than 18 years..!"</i></h3>
+                <div class="d-flex btn1">
+                  <a href="#menu"><button class="btn btn-lg"><b>Our Menu</b></button></a>
+                 <a href="#contact"> <button class="btn btn-lg btn2"><b>Book A Table</b></button></a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/HD_transparent_picture.png/1280px-HD_transparent_picture.png" 
+                class="img-fluid" style="height:70vh;">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--main 1 end-->
+    <!--main 2-->
+    <div class="main2" id="m2">
+      <div class="container-fluid sec3">
+        <div class="row">
+          <div class="col-lg-7 ann1">
+            <h5>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h5>
+            <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+               incididunt ut labore et dolore magna aliqua.</h6>
+               <p class="p0"><span class="fa1"><i class="fa fa-check" aria-hidden="true"></i></span><span class="p1">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+               <p class="p0"><span class="fa1"><i class="fa fa-check" aria-hidden="true"></i></span><span class="p1">Duis aute irure dolor in reprehenderit in voluptate velit.</span></p>
+               <p class="p0"><span class="fa1"><i class="fa fa-check" aria-hidden="true"></i></span> <span class="p1">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                 dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></p>
+                 <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                   sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-5 ann2">
+            <img class="img-fluid img2" src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/about.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end of main2-->
+    <!--main3-->
+    <div class="main3">
+      <p style="color:#fff; letter-spacing: 4px;"><i>WHY US----------------</i></p>
+      <h1 style="color:#CDA45E;"><i>Why Choose Our Restaurant</i></h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+             <div class="card1">
+              <h2 >01</h2>
+              <h3>Lorem Ipsum</h3>
+              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+             </div>
+          </div>
+          <div class="col-lg-4">
+           <div class="card1">
+            <h2>02</h2>
+            <h3>Repellat Nihil</h3>
+            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor 
+              quod et vel dire leno para dest</p>
+           </div>
+          </div>
+          <div class="col-lg-4">
+           <div class="card1">
+            <h2>03</h2>
+            <h3>Ad ad velit qui</h3>
+            <p>Molestiae officiis omnis illo asperiores. 
+              Aut doloribus vitae sunt debitis quo vel nam quis</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of main 3-->
+<!--Main 4-->
+    <div class="main4" id="menu">
+        <div class="sec5">
+          <p style="color:#fff; letter-spacing: 4px;"><i>MENU----------------</i></p>
+        <h1 style="color:#CDA45E;">Check Our Tasty Menu</h1>
+        <!--navbar 2-->
+        <div class="nav2">
+          <ul>
+            <li><a href="#">ALL</a></li>
+            <li><a href="#">STARTERS</a></li>
+            <li><a href="#">SALAD</a></li>
+            <li><a href="#">SPECIALITY</a></li>
+          </ul>
+        </div>
+        <!--navbar 2 end-->
+      <div class="container-fluid menu-items" id="menu">
+        <div class="row">
+          <div class="col-lg-6 left1">
+            
+                <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-bisque.jpg" class="img-fluid menu-image">
+                  <b>Lobster Bisque</b>.........................<span class="mrp">$5.95</span><br><span>Lorem, deren, trataro, filede, nerada</span></p><br>              
+              <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/cake.jpg" class="img-fluid menu-image">
+                <b>Crab Cake</b>...............................<span class="mrp">$7.95</span><br><span>A delicate crab cake
+                   served on<br> a toasted roll with lettuce and tartar sauce
+                </span></p><br>
+                
+              <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/tuscan-grilled.jpg" class="img-fluid menu-image">
+                <b>Tuscan Grilled</b>...........................<span class="mrp">$9.95</span><br><span>Grilled chicken with provolone,<br>
+                   artichoke hearts, and roasted red pesto</span></p><br>
+              
+                <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/greek-salad.jpg" class="img-fluid menu-image">
+              <b>Greek Salad</b>.............................<span class="mrp">$9.95</span><br><span>Fresh spinach, crisp
+                 romaine,<br> tomatoes, and Greek olives</span></p><br>
+                
+              <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/lobster-roll.jpg" class="img-fluid menu-image">
+                <b>Lobster Roll</b>.................................<span class="mrp">$12.95</span><br><span>Plump lobster meat, 
+                  mayo and crisp lettuce on a<br> toasted bulky roll</span></p>
+          </div>
+          <div class="col-lg-6 left1">
+
+            <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/bread-barrel.jpg" class="img-fluid menu-image">
+              <b>Bread Barrel</b>..........................<span class="mrp">$6.95</span><br><span>Plump lobster meat, 
+                Lorem, deren, trataro, filede, nerada</span></p><br>
+
+            <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/caesar.jpg" class="img-fluid menu-image">
+                  <b>Caesar Selections</b>...........................<span class="mrp">$8.95</span><br><span>Plump lobster meat, 
+                    Lorem, deren, trataro, filede, nerada</span></p><br>
+
+            <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/mozzarella.jpg" class="img-fluid menu-image">
+                      <b>Mozarella Stick</b>..............................<span class="mrp">$4.95</span><br><span>Plump lobster meat, 
+                        Lorem, deren, trataro, filede, nerada</span></p><br>
+
+            <p><img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/menu/spinach-salad.jpg" class="img-fluid menu-image">
+                          <b>Spinach salad</b>..............................<span class="mrp">$9.95</span><br><span>Plump lobster meat, 
+                            Fresh spinach with mushrooms, <br> hard boiled egg, and warm bacon vinaigrette</span></p>
+          </div>
+        </div>
+      </div>
+        </div>
+    </div>
+    <!--end of main 4-->
+    <!--Main 5-->
+          <div class="main5" id="specials" style="background-color: #0c0b09;">
+            <p style="color:#fff;letter-spacing: 4px;"><i>Specials---------</i></p>
+            <h1 style="color:#CDA45E;">Check Our Specials</h1>
+            <div class="container-fluid sec6">
+              <div class="row padtop">
+                <div class="col-lg-4">
+                  <!--Navbar 3-->
+                  <div class="navbar3">
+                    <div class="left01">
+                     
+                      <ul class="nav3">
+                        <li><a href="#">Boiled Maine Lobster</a></li>
+                        <li><a href="#">Sushi Roll</a></li>
+                        <li><a href="#">Nostrum Quasi</a></li>
+                        <li><a href="#">Christmas Sp. Dish</a></li>
+                        <li><a href="#">Lobster Rice</a></li>
+                      </ul>
+                      
+                    </div>
+                    <div class="vertical">
+                      <!--vertical line-->
+                    </div>
+                  </div>
+                  <!--navbar end-->
+                </div>
+                <div class="col-lg-4">
+                  <h1 class="section-8"><b><i>Fuga dolores inventore laboriosam ut 
+                    est accusamus laboriosam dolore</i></b></h1>
+                  <p class="section-8">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                  <p class="section-8">Eaque consequuntur consequuntur libero expedita in voluptas. 
+                    Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit.
+                     Eum ex maxime error in consequatur corporis atque.
+                      Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                </div>
+                <div class="col-lg-4">
+                  <img src="specials-4.png" class="img-fluid img3">
+                </div>
+              </div>
+            </div>
+          </div>
+    <!--end of main 5-->
+    <!--main6-->
+    <div class="main6" id="events">
+      <div class="container-fluid section9">
+      <p style="color:#fff; letter-spacing: 4px;text-align: center; padding-top:8%;"><i>EVENTS----------------</i></p>
+      <h1 style="color:#CDA45E; text-align: center;">Organize Your Events in our Restaurant</h1>
+      
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row lr1">
+                <div class="col-lg-6 l1">
+                  <img class="img-fluid s9img" src="http://3.bp.blogspot.com/_2SQhTguIP9E/TRpWBLVB3AI/AAAAAAAAA3Q/NnQZLZMXYXc/s1600/Custom+Party+Hats2.jpg">
+                </div>
+                <div class="col-lg-6 r1">
+                  <h3 style="color:#CDA45E;">Birthday Parties</h3>
+                  <h4 style="color:#fff;"><u style="color:coral">$189</u></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                   aute irure dolor in reprehenderit in voluptate trideta storacalaperda
+                    mastiro dolore eu fugiat nulla pariatur.</p>
+                    <p>Ullamco laboris nisi ut aliquip ex ea 
+                      commodo consequat. Duis aute irure dolor
+                       in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row lr1">
+                <div class="col-lg-6 l1">
+                  <img class="img-fluid" src="https://assets-global.website-files.com/605baba32d94435376625d33/6495708a69906da7f0e243d1_office-party-ideas.jpg">
+                </div>
+                <div class="col-lg-6 r1">
+                  <h3 style="color:#CDA45E;">Private Parties</h3>
+                  <h4 style="color:#fff;"><u style="color:coral">$290</u></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                   aute irure dolor in reprehenderit in voluptate trideta storacalaperda
+                    mastiro dolore eu fugiat nulla pariatur.</p>
+                    <p>Ullamco laboris nisi ut aliquip ex ea 
+                      commodo consequat. Duis aute irure dolor
+                       in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row lr1">
+                <div class="col-lg-6 l1">
+                  <img class="img-fluid" src="http://www.whiteevents.ie/wp-content/uploads/2018/02/White-events-party-planner-designs.jpg">
+                </div>
+                <div class="col-lg-6 r1">
+                  <h3 style="color:#CDA45E;">Custom Parties</h3>
+                  <h4 style="color:#fff;"><u style="color:coral">$99</u></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                   aute irure dolor in reprehenderit in voluptate trideta storacalaperda
+                    mastiro dolore eu fugiat nulla pariatur.</p>
+                    <p>Ullamco laboris nisi ut aliquip ex ea 
+                      commodo consequat. Duis aute irure dolor
+                       in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--main 6 end-->
+    <!--mmain 7-->
+    <div class="main7">
+      <p style="color:#fff;letter-spacing: 4px; text-align: center;"><i>RESERVATION---------</i></p>
+      <h1 style="color:#CDA45E;text-align: center;">Book A Table</h1>
+      <div class="container-fluid tex-row-0">
+        <div class="row text-row-1">
+          <div class="col-lg-4">
+            <input type="text" style="background-color: #000;
+            border:1px solid #625b4b;
+            color:white;" name="name" class="form-control txt1" id="name" placeholder="Your Name">
+          </div>
+          <div class="col-lg-4">
+            <input type="email" style="background-color: #000;
+            border:1px solid #625b4b;
+            color:white;" name="name" class="form-control txt1" id="name" placeholder="Your Email">
+          </div>
+          <div class="col-lg-4">
+            <input type="number" style="background-color: #000;
+            border:1px solid #625b4b;
+            color:white;" name="name" class="form-control txt1" id="name" placeholder="Your phone">
+          </div>
+        </div>
+        <div class="row text-row-1">
+          <div class="col-lg-4">
+            <input type="text" style="background-color: #000;
+            border:1px solid #625b4b;
+            color:white;" name="name" class="form-control txt1" id="name" placeholder="Date">
+          </div>
+          <div class="col-lg-4">
+            <input type="text" style="background-color: #000;
+            border:1px solid #625b4b;
+            color:white;" name="name" class="form-control txt1" id="name" placeholder="Time">
+          </div>
+          <div class="col-lg-4">
+            <input type="text" style="background-color: #000;
+            border:1px solid #625b4b;
+            color:white;" name="name" class="form-control txt1" id="name" placeholder="No. of people">
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" placeholder="Message"rows="5" cols="7" style="background-color: #000;
+          border:1px solid #625b4b;
+          color:white;"></textarea>
+        </div>
+          <button class="btn btn-lg button1">Book A Table</button>
+      </div>
+    </div>
+    <!--main 7 end-->
+    <!--main8-->
+    <div class="main8">
+      <div class="container-fluid">
+        <p style="color:#fff; letter-spacing: 4px;"><i>TESTIMONIALS----------------</i></p>
+        <h1 style="color:#CDA45E;">What they're saying about us</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card01">
+                    
+                    <p>A testimonial is effectively a review or recommendation from a client,
+                      letting other people know how your products or services benefitted them.
+                    </p> &nbsp
+
+                    <div class="d-flex">
+                      <div class="fl1">
+                        <img class="img-fluid" src="https://templates.envytheme.com/muva/default/assets/img/testimonials/client-1.jpg">
+                       </div>
+                       <!--img end-->
+
+                       <div class="fl2"style="padding-left:3%;padding-top:5%;" >
+                        <h3><b>Jim Morison</b></h3>
+                        <p>Director , BAT</p>
+                       </div>
+
+                       <div class="fl3 ml-auto">
+                        <i class="fa fa-quote-right" aria-hidden="true" style="font-size:60px; color:#666666;padding-top:5%;"></i>
+                       </div>
+
+                    </div>
+                    <!--dflex end-->
+                  </div>
+                  <!--card1 end-->
+                </div>
+                <!--col end-->
+                <div class="col-lg-6">
+                  <div class="card01">
+                    
+                    <p>A testimonial is effectively a review or recommendation from a client,
+                      letting other people know how your products or services benefitted them.
+                    </p> &nbsp
+
+                    <div class="d-flex">
+                      <div class="fl1">
+                        <img class="img-fluid" src="https://templates.envytheme.com/muva/default/assets/img/testimonials/client-2.jpg">
+                       </div>
+                       <!--img end-->
+
+                       <div class="fl2"style="padding-left:3%; padding-top:5%;" >
+                        <h3><b>Alex Cruis</b></h3>
+                        <p>CEO , IBAC</p>
+                       </div>
+
+                       <div class="fl3 ml-auto">
+                        <i class="fa fa-quote-right" aria-hidden="true" style="font-size:60px; color:#666666; padding-top:5%;"></i>
+                       </div>
+
+                    </div>
+                    <!--dflex end-->
+                  </div>
+                  <!--card2 end-->
+                </div>
+                <!--col-end-->
+              </div>
+              <!--row end-->
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card01">
+                    
+                    <p>A testimonial is effectively a review or recommendation from a client,
+                      letting other people know how your products or services benefitted them.
+                    </p> &nbsp
+
+                    <div class="d-flex">
+                      <div class="fl1">
+                        <img class="img-fluid" src="https://templates.envytheme.com/muva/default/assets/img/testimonials/client-3.jpg">
+                       </div>
+                       <!--img end-->
+
+                       <div class="fl2"style="padding-left:3%; padding-top:5%;" >
+                        <h3><b>Tom Haris</b></h3>
+                        <p>Engineer , Olleo</p>
+                       </div>
+
+                       <div class="fl3 ml-auto">
+                        <i class="fa fa-quote-right" aria-hidden="true" style="font-size:60px; color:#666666; padding-top:5%;"></i>
+                       </div>
+
+                    </div>
+                    <!--dflex end-->
+                  </div>
+                  <!--card2 end-->
+                </div>
+                <!--col-end-->
+                <div class="col-lg-6">
+                  <div class="card01">
+                    
+                    <p>A testimonial is effectively a review or recommendation from a client,
+                      letting other people know how your products or services benefitted them.
+                    </p> 
+
+                    <div class="d-flex">
+                      <div class="fl1">
+                        <img class="img-fluid" src="https://templates.envytheme.com/muva/default/assets/img/testimonials/client-4.jpg">
+                       </div>
+                       <!--img end-->
+
+                       <div class="fl2"style="padding-left:3%; padding-top:5%;" >
+                        <h3><b>Harry Jakson </b></h3>
+                        <p>Enterpreneur</p>
+                       </div>
+
+                       <div class="fl3 ml-auto">
+                        <i class="fa fa-quote-right" aria-hidden="true" style="font-size:60px; color:#666666; padding-top:5%;"></i>
+                       </div>
+
+                    </div>
+                    <!--dflex end-->
+                  </div>
+                  <!--card3 end-->
+                </div>
+                <!--col end-->
+              </div>
+              <!--row end-->
+            </div>
+            <div class="carousel-item">
+             <div class="row">
+              <div class="col-lg-6">
+                <div class="card01">
+                  
+                  <p>A testimonial is effectively a review or recommendation from a client,
+                    letting other people know how your products or services benefitted them.
+                  </p> &nbsp
+
+                  <div class="d-flex">
+                    <div class="fl1">
+                      <img class="img-fluid" src="https://templates.envytheme.com/muva/default/assets/img/testimonials/client-5.jpg">
+                     </div>
+                     <!--img end-->
+
+                     <div class="fl2"style="padding-left:3%; padding-top:5%;" >
+                      <h3><b>Jim Chris Haris</b></h3>
+                      <p>MD , ITec</p>
+                     </div>
+
+                     <div class="fl3 ml-auto">
+                      <i class="fa fa-quote-right" aria-hidden="true" style="font-size:60px; color:#666666; padding-top:5%;"></i>
+                     </div>
+
+                  </div>
+                  <!--dflex end-->
+                </div>
+                <!--card3 end-->
+              </div>
+              <!--col end-->
+
+              <div class="col-lg-6">
+                <div class="card01">
+                  
+                  <p>A testimonial is effectively a review or recommendation from a client,
+                    letting other people know how your products or services benefitted them.
+                  </p> &nbsp
+
+                  <div class="d-flex">
+                    <div class="fl1">
+                      <img class="img-fluid" src="https://templates.envytheme.com/muva/default/assets/img/testimonials/client-3.jpg">
+                     </div>
+                     <!--img end-->
+
+                     <div class="fl2"style="padding-left:3%; padding-top:5%;" >
+                      <h3><b>Tom Haris</b></h3>
+                      <p>Engineer , Olleo</p>
+                     </div>
+
+                     <div class="fl3 ml-auto">
+                      <i class="fa fa-quote-right" aria-hidden="true" style="font-size:60px; color:#666666; padding-top:5%;"></i>
+                     </div>
+
+                  </div>
+                  <!--dflex end-->
+                </div>
+                <!--card3 end-->
+              </div>
+              <!--col end-->
+             </div>
+             <!--row end-->
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--main 8 end-->
+
+    <div class="main9" id="gallery">
+      <div class="container-fluid">
+        <p style="color:#fff; letter-spacing:4px;"><i>GALLERY----------------</i></p>
+        <h1 style="color:#CDA45E;">Some Photos From Our Restaurant</h1>
+        <div class="row">
+          <div class="col-md-3 pic1">
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-1.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 pic1">
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-2.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 pic1">
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-3.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 pic1">
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-4.jpg" class="img-fluid">
+          </div>
+        </div>
+        <!--first row end-->
+        <div class="row row2">
+          <div class="col-md-3 pic1">
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-5.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 pic1">
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-6.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 pic1">
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-7.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-3 pic1">
+            <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/gallery/gallery-8.jpg" class="img-fluid">
+          </div>
+        </div>
+        <!--2nd row end-->
+      </div>
+    </div>
+    <!--main 9 end-->
+    <!--main 10-->
+    <div class="main10" id="chefs">
+      <div class="container-fluid">
+        <p style="color:#fff; letter-spacing: 4px; padding-top:8%; text-align: center;"><i>Chefs----------------</i></p>
+      <h1 style="color:#CDA45E;text-align:center">Our Proffesional Chefs</h1>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="wrapper1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-1.jpg" class="img-fluid">
+                <div class="info1">
+                  <h2>Walter White</h2>
+                  <h5>Master Chef</h5>
+                  <h5><span><i class="fa fa-twitter" aria-hidden="true"></i></span><span class="cheffa"><i class="fa fa-facebook" aria-hidden="true"></i></span><span><i class="fa fa-instagram" aria-hidden="true"></i></span><span style="padding-left:10px;"><i class="fa fa-linkedin" aria-hidden="true"></i></span></h5>
+                </div>
+              </div>
+            </div>
+            <!--col end-->
+            <div class="col-lg-4">
+              <div class="wrapper1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-2.jpg" class="img-fluid">
+                <div class="info1">
+                  <h2>Sarah Johnson</h2>
+                  <h5>Patissier</h5>
+                  <h5><span><i class="fa fa-twitter" aria-hidden="true"></i></span><span class="cheffa"><i class="fa fa-facebook" aria-hidden="true"></i></span><span><i class="fa fa-instagram" aria-hidden="true"></i></span><span style="padding-left:10px;"><i class="fa fa-linkedin" aria-hidden="true"></i></span></h5>
+                </div>
+              </div>
+            </div>
+            <!--col end-->
+            <div class="col-lg-4">
+              <div class="wrapper1">
+                <img src="https://bootstrapmade.com/demo/templates/Restaurantly/assets/img/chefs/chefs-3.jpg " class="img-fluid">
+                <div class="info1">
+                  <h2>William Anderson</h2>
+                  <h5>Cook</h5>
+                  <h5><span><i class="fa fa-twitter" aria-hidden="true"></i></span><span class="cheffa"><i class="fa fa-facebook" aria-hidden="true"></i></span><span><i class="fa fa-instagram" aria-hidden="true"></i></span><span style="padding-left:10px;"><i class="fa fa-linkedin" aria-hidden="true"></i></span></h5>
+                </div>
+              </div>
+            </div>
+            <!--col end-->
+          </div>
+      </div>
+    </div>
+    <!--main 10 end-->
+    <!--main 11-->
+    <div class="main11" id="contact">
+      <div class="container">
+        <p style="color:#fff; letter-spacing:4px;"><i>CONTACT----------------</i></p>
+        <h1 style="color:#CDA45E;">Contact Us</h1>
+        <img src="http://static3.businessinsider.com/image/559d2532dd0895e1308b4668-1200-706/untitled-1-5.jpg" class="img-fluid" style="width:100%;">
+       <div class="container ">
+        <div class="row m11s1">
+
+          <div class="col-lg-5">
+
+            <div class="d-flex">
+              <h1 style="border:1px solid;border-radius: 100%;width:50px;padding:0 12px;height:50px;background-color: #CDA45E;"><i class="fa fa-map-marker" aria-hidden="true"></i></h1>
+              <p style="padding-left:20px"><span style="font-size:large"><b>Location:</b></span><br><span>A108 Adam Street, New York, NY 535022</span></p>
+            </div>
+          
+
+          
+            <div class="d-flex m11s01">
+              <h1 style="border:1px solid;border-radius: 100%;width:50px;padding:0 6px;height:50px;background-color: #CDA45E;"><i class="fa fa-clock-o" aria-hidden="true"></i></h1>
+              <p style="padding-left:20px"><span style="font-size:large"><b>Open Hours:</b></span><br><span>Monday-Saturday:</span><br><span>11:00 AM - 2300 PM</span></p>
+            </div>
+          
+
+          
+            <div class="d-flex m11s01">
+              <h1 style="border:1px solid;border-radius: 100%;width:55px;padding:0 7px;height:50px;background-color: #CDA45E;"><i class="fa fa-envelope-o" aria-hidden="true"></i></h1>
+              <p style="padding-left:20px"><span style="font-size:large;font-weight:bold">Email:</span><br><span>info@example.com</span></p>
+            </div>
+         
+
+          
+            <div class="d-flex m11s01">
+              <h1 style="border:1px solid;border-radius: 100%;width:50px;padding:0 15px;height:50px; background-color: #CDA45E;"><i class="fa fa-mobile" aria-hidden="true"></i></h1>
+              <p style="padding-left:20px"><span style="font-size:large"><b>Call:</b></span><br><span>+1 5589 55488 55s</span></p>
+            </div>
+         </div>
+          <!--col end-->
+         <div class="col-lg-7">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" style="background-color: #000;
+                  border:1px solid #625b4b;
+                  color:white;" name="name" class="form-control txt1" id="name" placeholder="Your Name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" style="background-color: #000;
+                  border:1px solid #625b4b;
+                  color:white;" name="name" class="form-control txt1" id="name" placeholder="Your Email">
+                </div>
+                <div class="col-12 mt-2">
+                  <textarea class="w-100 pd1"style="background-color:#000;
+                  border:1px solid #625b4b;
+                  color:white;" name="name" class="form-control txt1" id="name" placeholder="Subject"></textarea>
+                </div>
+
+                <div class="col-12 mt-2">
+                  <textarea class="w-100"style="background-color:#000;
+                  border:1px solid #625b4b;
+                  color:white;" name="name" class="form-control txt1" id="name" placeholder="Message" rows="6" cols="10"></textarea>
+                </div>
+                <div class="col-12 bt">
+                  <button class="btn btn-lg button1">Book A Table</button>
+                </div>
+              </div>
+          </div>
+          <!--col end-->
+          
+        </div>
+       </div>
+      </div>
+    </div>
+    <hr style="border-top: 1px solid #cda45e; margin-top:5%;">
+    <!--main 11 end-->
+
+    <!--footer-->
+
+    <div class="footerlast">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5 style="letter-spacing:2px;color:#fff;"><b><em><u>RESTAURANTLY</u></em></b></h5>
+
+            <p style="color:#fff; margin-top:10%;"><em>A108 Adam Street<br>
+              NY 535022, USA</em></p>
+
+              <p style="color:#fff;padding:20px 0;"><em>Phone: +1 5589 55488 55<br>
+                Email: info@example.com</em></p>
+              
+              <p style="color:#fff; letter-spacing: 5px;">
+                <span style="border:2px solid white;border-radius:50%;padding:7px 6px; background-color: #28251f;"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                <span style="border:2px solid white;border-radius:50%;padding:7px 6px; background-color: #28251f;"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span style="border:2px solid white;border-radius:50%;padding:7px 6px;background-color: #28251f;"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span style="border:2px solid white;border-radius:50%;padding:7px 6px; background-color: #28251f;"><i class="fa fa-skype" aria-hidden="true"></i></span></p>
+          </div>
+          <!--col end-->
+          <div class="col-md-3 last_sec">
+            <h5 style="color:#fff;"><b><em>Useful Links</em></b></h5>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+            <span class="ho1">Home</span></p>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+            <span class="ho1">About Us</span></p>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span class="ho1">Services</span></p>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span class="ho1">Terms Of Services</span></p>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span class="ho1">Privacy Policy</span></p>
+          </div>
+          <!--col end-->
+          <div class="col-md-3">
+            <h5 style="color:#fff;"><b><em>Our Services</em></b></h5>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span class="ho1">Best Quality food</span></p>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span class="ho1">Home delievery</span></p>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                <span class="ho1">Best Staff</span></p>
+            <p style="color:#fff;"><span style="color:#cda45e;"><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                <span class="ho1">Proffesional Chefs</span></p>
+          </div>
+          <!--col end-->
+          <div class="col-md-3">
+            <h5 style="color:#fff;"><b><em>Our Newsletter</em></b></h5>
+            <p style="color:#fff; margin:25px 0"><em>Tamen quem nulla quae legam multos aute sint culpa<br> legam noster magna</em></p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" style="background-color: #28251f;"aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2" style="background-color:#cda45e;">Subscribe</span>
+              </div>
+            </div>
+          </div>
+          <!--col end-->
+        </div>
+      </div>
+    </div>
+    <hr style="border-top: 1px solid #cda45e; margin-top:5%;">
+
+    <!--my info-->
+    <div class="container myinfo">
+      <p><b><em><span style="color:#fff;">Website made by : </span><span style="color:#CDA45E">Divyansh Nanavati</span></em></b></p>
+      <p><span style="color:#fff;"><em>Contact Details:</em></span>
+        <span style="color:#CDA45E" id="hideme">+91 9586033313</span><br>
+        <span style="color:#CDA45E">@divyanshnanavati08@gmail.com</span></p>
+    </div>
+    <hr style="border-top: 1px solid #fff; margin-top:5%;">
+    <!--my info end-->
+
+    <!--footer end-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!--total lines of code---1382....   -->

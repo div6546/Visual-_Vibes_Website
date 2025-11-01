@@ -1,0 +1,153 @@
+/* admin-dashboard.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #fff7e5;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #e68a00;
+  margin-bottom: 30px;
+}
+
+.form-box h2,
+.content-section h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #f1b755;
+  padding-bottom: 5px;
+  color: #d17e00;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+input[type="text"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #ffaa00;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ffaa00;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e69400;
+}
+
+.status-msg {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: green;
+}
+
+.content-section {
+  margin-top: 50px;
+}
+
+.content-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.content-item {
+  background: #fff9e8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.content-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.content-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.content-item p {
+  font-size: 0.95rem;
+  color: #666;
+}
+/* ====== Back Button ====== */
+.back-button-below {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.back-button-below a {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #f0aa00;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-button-below a:hover {
+  background-color: #d89100;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

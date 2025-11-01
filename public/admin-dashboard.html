@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin-dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Shiku Infra Admin Dashboard</h1>
+    <p>You are successfully logged in.</p>
+
+    <!-- Upload Form -->
+    <div class="form-box">
+      <h2>Upload New Content</h2>
+      <form id="uploadForm" enctype="multipart/form-data">
+  <label>Title</label>
+  <input type="text" name="title" id="title" required />
+
+  <label>Description</label>
+  <textarea name="description" id="description" rows="4" placeholder="Write a brief description..."></textarea>
+
+  <label>Select Image</label>
+  <input type="file" name="image" id="image" accept="image/*" required />
+
+  <button type="submit">Upload</button>
+  <p id="uploadMsg" class="status-msg"></p>
+</form>
+
+    </div>
+    <p id="upload-success" style="color: green; text-align: center;"></p>
+    <p id="upload-error" style="color: red; text-align: center;"></p>
+    <!-- Back Button -->
+    <div class="back-button-below">
+      <a href="admin-messages.html">Admin Dashboard</a>
+      
+    <a href="login.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <!-- JavaScript at the end of body -->
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>
